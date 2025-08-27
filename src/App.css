@@ -1,38 +1,110 @@
+:root {
+  --primary: #226ba3;
+  --secondary: #627e75;
+  --accent: #e9c429;
+  --error: #913639;
+  --neutral: #d2a985;
+}
+
+body {
+  background-color: var(--secondary) !important;
+  color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-primary {
+  background-color: var(--primary) !important;
+  color: #fff !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: #1a5582 !important;
+  border-color: #1a5582 !important;
+}
+
+.card {
+  border: 1px solid var(--neutral) !important;
+  background-color: #fff !important;
+  border-radius: 8px;
+}
+
+.text-accent {
+  color: var(--accent) !important;
+}
+
+.text-error {
+  color: var(--error) !important;
+}
+
+.text-neutral {
+  color: var(--neutral) !important;
+}
+
+.text-neutral:hover {
+  color: var(--accent) !important;
+}
+
+.form-control {
+  border-color: var(--neutral) !important;
+}
+
+.form-control:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(34, 107, 163, 0.25);
+}
+/* Icon styling */
+.fa-icon {
+  vertical-align: middle;
+  color: var(--neutral); /* Beige for icons */
+}
+
+.bg-primary .fa-icon {
+  color: #fff; /* White icons in blue backgrounds */
+}
+
+.text-neutral .fa-icon {
+  color: var(--neutral);
+}
+
+.text-neutral:hover .fa-icon {
+  color: var(--accent); /* Yellow on hover */
+}
+
+.text-accent .fa-icon {
+  color: var(--accent); /* Yellow for accent */
+}
+
+.text-error .fa-icon {
+  color: var(--error); /* Red for errors */
+}
+.modal-content {
+  border: 1px solid var(--neutral) !important;
+  border-radius: 8px !important;
+}
+
+.modal-header.bg-primary {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.modal-footer .btn-secondary {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #4f665e !important; /* Darker secondary */
+  border-color: #4f665e !important;
 }
