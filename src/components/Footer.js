@@ -16,10 +16,10 @@ function Footer() {
               </a>
             </p>
             <div>
-              <a href="https://twitter.https://github.com/saif-xx" className="text-neutral mx-2">
+              <a href="https://github.com/saif-xx" className="text-neutral mx-2">
                 <FaGithub className="me-1" /> GitHub
               </a>
-              <a href="https://https://www.linkedin.com/in/saif-naikwade-11b2a624a/.com" className="text-neutral mx-2">
+              <a href="https://www.linkedin.com/in/saif-naikwade-11b2a624a/.com" className="text-neutral mx-2">
                 <FaLinkedin className="me-1" /> LinkeDin
               </a>
             </div>
